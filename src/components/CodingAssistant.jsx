@@ -12,7 +12,7 @@ const CodeMateAssistant = () => {
   const [currentCodeBlock, setCurrentCodeBlock] = useState(0);
   const conversationRef = useRef(null);
   const sessionId = 'default';
-  const API_BASE = 'https://dzai.onrender.com';
+  const API_BASE = 'http://localhost:8000';
 
   useEffect(() => {
     checkAPIConnection();
