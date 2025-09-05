@@ -228,7 +228,7 @@ const CodeMateAssistant = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `CodeMate-${Date.now()}${extension}`;
+    a.download = `DZAi-${Date.now()}${extension}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -258,7 +258,7 @@ const CodeMateAssistant = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  CodeMate
+                  DZAi
                 </h1>
                 <p className="text-gray-400 text-sm">Voice Coding Assistant</p>
               </div>
@@ -443,7 +443,7 @@ const CodeMateAssistant = () => {
                     >
                       <div className="flex items-center justify-between mb-2">
                         <span className={`font-semibold text-sm ${message.isUser ? 'text-blue-400' : 'text-green-400'}`}>
-                          {message.isUser ? 'You' : 'CodeMate'}
+                          {message.isUser ? 'You' : 'DZAi'}
                         </span>
                         <span className="text-xs text-gray-500">{message.timestamp}</span>
                       </div>
